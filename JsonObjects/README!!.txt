@@ -1,0 +1,1 @@
+Taken only first term as the source for president by name. 

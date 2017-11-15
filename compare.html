@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Office</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-slider.css">
+        <link rel="stylesheet" type="text/css" media="all" href="assets/css/style-projects.css">
+        
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+
+
+    <body class="bg-color-sky-light">
+
+    <!-- Header -->
+        
+    <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+        <div class="container">
+        
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse" style="width:200px;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img class="office-logo" style="height: 60px; width: 120px;" src="assets/img/slider/union3.png" alt="StateOfUnion"></a>      
+            </div>
+        
+            <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="Presidents.html">Presidents</a>
+                    </li>
+                    <li>
+                        <a href="Year.html">Year</a>
+                    </li>
+                    <li class="active">
+                        <a href="compare.html">Compare</a>
+                    </li>
+                </ul>         
+            </div>
+        </div>
+    </nav>
+
+
+    <!--End Header -->
+    <!-- Main Container -->
+    <div class="container">   
+        <div style="height:520px;" class="row">
+            <div class="side-left col-sm-4 col-md-3">
+
+                <h3 class="lead">  Compare the Transitions  </h3><hr>
+				<div class="dropdown">
+				  <button style="width:100%;" class="btn btn-default dropdown-toggle status" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					Compare
+					<span class="caret"></span>
+				  </button>
+				  <ul style="width:100%;" class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu1">
+					<li><a href="#">Obama-Trump</a></li>
+					<li><a href="#">GWBush-Obama</a></li>
+					<li><a href="#">Clinton-GWBush</a></li>
+					<li><a href="#">GHWBush-Clinton</a></li>
+					<li><a href="#">Raegan-GHWBush</a></li>
+				  </ul>
+				</div>
+            </div>
+            <div class="col-sm-8 col-md-9">
+				<h3>Change in trends with new Presidents taking over</h3>
+                <hr>
+				<div class="col-sm-3 col-md-7">
+				<div id="chart_type" class="btn-group" data-toggle="buttons">
+					<label id="bubbleRadio" class="btn btn-default active">
+						<input type="radio" name="options" value="bar" > Bar
+					</label>
+					<label id="activeRadio" class="btn btn-default">
+						<input type="radio" name="options" value="horizontalBar" checked> Horizontal Bar
+					</label>
+					<label id="tableRadio" class="btn btn-default">
+						<input type="radio" name="options" value="line"> Line
+					</label>
+				</div>
+				</div>
+				<div class="col-sm-3 col-md-1">	<p> Size <p></div>
+				<div id="Canvas">
+				<canvas id="myChart" width="850 !important;" height="400 !important;"></canvas>
+				</div>
+            </div>  
+        </div>    
+    </div>  
+
+    <!--End Main Container -->
+
+    <!-- Footer -->
+    <footer> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><i class="fa fa-map-marker"></i> Contact:</h3>
+                    <div class="col-sm-16 col-sm-offset-1">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-6 md-margin-b-30">
+                                    <h5>Name</h5>
+                                    <a href="http://www.swadki.com/">Suyameendra Wadki</a>
+									<br>
+									<a>Abhishek Madhusudhan</a>
+									<a>Abhishek Kamat</a>
+                                </div>
+                                <div class="col-md-3 col-xs-6 md-margin-b-30">
+                                    <h5>Phone</h5>
+                                    <a>+571-279-3405</a>
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <h5>Email</h5>
+                                    <a href="mailto:#">swadki@gmu.edu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+        </div>
+      </div>
+    </footer>
+
+    
+    <div class="copyright text center">
+        <p>&copy; Copyright 2017, <a href="#">State of the Union - Dashboards</a>.</p>
+    </div>
+
+       
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/getChart.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/bootstrap-slider.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+<script type="text/javascript">
+$(function() {
+
+var jqxhr = $.getJSON( "JSON/example.json", function() {
+  console.log( "success" );
+})
+
+console.log(jqxhr);
+
+var currentYear;
+var currentType;
+var currentSlider;
+
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+$('.dropdown-menu a').click(function(e){
+    //$('.status').text(this.innerHTML+" ");
+	//$('.status').append("<span class='caret'></span>");
+	  var selText = $(this).text();
+	  $(this).parents('.dropdown').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+	//console.log($(this).html());
+	
+	currentYear = $(this).html();
+	
+	$('#tableRadio').removeClass('active');
+	$('#bubbleRadio').addClass('active');
+	$('#activeRadio').removeClass('active');
+	
+	currentType = "bar";
+	currentSlider = 10;
+	getChartTransition($(this).html(),"bar");	
+	
+});
+
+
+$('.dropdown-menu a')[0].click();
+
+$("#chart_type :input").change(function() {
+    //alert(this.value); // points to the clicked input button
+	console.log(currentYear);
+    currentType=this.value;
+    getChartTransition(currentYear,this.value);
+});
+</script>
+
+  </body>
+</html>
