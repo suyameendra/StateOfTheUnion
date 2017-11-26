@@ -125,7 +125,7 @@
     <footer> 
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <h3><i class="fa fa-map-marker"></i> Contact:</h3>
                     <div class="col-sm-16 col-sm-offset-1">
                             <div class="row">
@@ -134,7 +134,7 @@
                                     <a href="http://www.swadki.com/">Suyameendra Wadki</a>
 									<br>
 									<a>Abhishek Madhusudhan</a><br>
-									<a>Abhishek Kamath</a>
+									<a>Abhishek Kamat</a>
                                 </div>
                                 <div class="col-md-3 col-xs-6 md-margin-b-30">
                                     <h5>Phone</h5>
@@ -146,7 +146,7 @@
                                     <h5>Email</h5>
                                     <a href="mailto:#">swadki@gmu.edu</a><br>
                                     <a href="mailto:#">amadhusu@gmu.edu</a><br>
-                                    <a href="mailto:#">akamath2@gmu.edu</a><br>
+                                    <a href="mailto:#">akamath@gmu.edu</a><br>
                                 </div>
                             </div>
                         </div>
@@ -178,6 +178,7 @@
 $(function() {
 
 var currentPresident = sessionStorage.getItem("president");
+console.log(currentPresident);
 
 document.getElementById("presidentName").innerHTML+="<h3 class='lead'>"+currentPresident+"</h3>";
 
@@ -209,6 +210,40 @@ else if(currentPresident==="George Washington") {
 	document.getElementById("presidentInfo").innerHTML+="<hr><h4> Years Served </h4><p>1789 - 1797</p>";
 	getFourCharts(1789);
 }
+else if(currentPresident==="George H W Bush") {
+	$("#two").attr('disabled',true);
+	document.getElementById("presidentInfo").innerHTML="<br> <img style='max-width:100%; max-height:100%;' src='assets/img/slider/hwbush.jpg' />";
+	document.getElementById("presidentInfo").innerHTML+="<hr><h4> Years Served </h4><p>1989 - 1993</p>";
+	getFourCharts(1989);
+}
+else if(currentPresident==="Ronald Reagen") {
+	document.getElementById("presidentInfo").innerHTML="<br> <img style='max-width:100%; max-height:100%;' src='assets/img/slider/reagen.jpg' />";
+	document.getElementById("presidentInfo").innerHTML+="<hr><h4> Years Served </h4><p>1981 - 1989</p>";
+	getFourCharts(1982);
+}
+else if(currentPresident==="Harry Truman") {
+	document.getElementById("presidentInfo").innerHTML="<br> <img style='max-width:100%; max-height:100%;' src='assets/img/slider/truman.jpeg' />";
+	document.getElementById("presidentInfo").innerHTML+="<hr><h4> Years Served </h4><p>1945 - 1953</p>";
+	//getFourCharts(1946);
+}
+else if(currentPresident==="Dwight Eisenhower") {
+	document.getElementById("presidentInfo").innerHTML="<br> <img style='max-width:100%; max-height:100%;' src='assets/img/slider/dwight.jpg' />";
+	document.getElementById("presidentInfo").innerHTML+="<hr><h4> Years Served </h4><p>1953 - 1961</p>";
+	//getFourCharts(1954);
+}
+else if(currentPresident==="Franklin D Roosevelt") {
+	document.getElementById("presidentInfo").innerHTML="<br> <img style='max-width:100%; max-height:100%;' src='assets/img/slider/franklin.jpeg' />";
+	document.getElementById("presidentInfo").innerHTML+="<hr><h4> Years Served </h4><p>1933 - 1945</p>";
+	getFourCharts(1934);
+}
+else if(currentPresident==="Abraham Lincoln") {
+	
+	$("#two").attr('disabled',true);
+	document.getElementById("presidentInfo").innerHTML="<br> <img style='max-width:100%; max-height:100%;' src='assets/img/slider/abraham.jpg' />";
+	document.getElementById("presidentInfo").innerHTML+="<hr><h4> Years Served </h4><p>1861 - 1865</p>";
+	getFourCharts(1861);
+}
+
 
 $("#term :input").change(function() {
     
@@ -251,7 +286,7 @@ $("#term :input").change(function() {
 		}		
 	}
 	
-	else if(currentPresident==="George Bush") {
+	else if(currentPresident==="George Washington") {
 		var term = $('#term input:radio:checked').val();
 		console.log(term);
 		if(term==="term1") {
@@ -262,6 +297,70 @@ $("#term :input").change(function() {
 			console.log(1794);
 			getFourCharts(1794);
 		}		
+	}
+	
+	else if(currentPresident==="George H W Bush") {
+		var term = $('#term input:radio:checked').val();
+		console.log(term);
+		if(term==="term1") {
+			console.log(1789);
+			getFourCharts(1989);
+		}		
+	}
+	else if(currentPresident==="Ronald Reagen") {
+		var term = $('#term input:radio:checked').val();
+		console.log(term);
+		if(term==="term1") {
+			console.log(1789);
+			getFourCharts(1982);
+		}
+		else if(term==="term2") {
+			console.log(1794);
+			getFourCharts(1985);
+		}		
+	}
+	else if(currentPresident==="Harry Truman") {
+		var term = $('#term input:radio:checked').val();
+		console.log(term);
+		if(term==="term1") {
+			console.log(1789);
+			getFourCharts(1946);
+		}
+		else if(term==="term2") {
+			console.log(1794);
+			getFourCharts(1950);
+		}		
+	}
+	else if(currentPresident==="Dwight Eisenhower") {
+		var term = $('#term input:radio:checked').val();
+		console.log(term);
+		if(term==="term1") {
+			console.log(1789);
+			getFourCharts(1954);
+		}
+		else if(term==="term2") {
+			console.log(1794);
+			getFourCharts(1958);
+		}		
+	}
+	else if(currentPresident==="Franklin D Roosevelt") {
+		var term = $('#term input:radio:checked').val();
+		console.log("Here1");
+		if(term==="term1") {
+			console.log("Here2");
+			getFourCharts(1934);
+		}
+		else if(term==="term2") {
+			console.log(1794);
+			getFourCharts(1938);
+		}		
+	}
+	else if(currentPresident==="Abraham Lincoln") {
+		var term = $('#term input:radio:checked').val();
+		console.log(term);
+		if(term==="term1") {
+			getFourCharts(1861);
+		}
 	}
 });
 
